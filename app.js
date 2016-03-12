@@ -1,4 +1,4 @@
-var app = angular.module("routingDirectives", ["ui.router"]);
+var app = angular.module("routingDirectives", ["ui.router", "Directives"]);
 
 app.config(function($stateProvider, $urlRouterProvider) {
 
