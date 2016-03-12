@@ -12,6 +12,9 @@ app.config(function($stateProvider, $urlRouterProvider) {
       resolve: { //view won't load until this is "resolved"
         hobbies: function(hobbiesService) {
           return hobbiesService.getHobbies(); //hobbies is whatever gets resolved from this function... has to return a promise
+        },
+        pokemon: function(hobbiesService) {
+          return hobbiesService.getPokemon();
         }
       }
     })
